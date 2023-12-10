@@ -2,10 +2,10 @@
 
 {% block body %}
      <h1> Add Task</h1>
-     <form action="{% url 'tasks:add'%}" mathod="post">
+     <form action="{% url 'tasks:add'%}" method="post"> <!-- Your mistake is here! You wrote mathod. But correct one will be method -->
         {% csrf_token %}
         {{ form }}
-         <input type="submit">
+          <input type="submit">
     </form>
     <a href="{% url 'tasks:index' %}"> View Tasks</a>
 {% endblock %}
