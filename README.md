@@ -22,3 +22,17 @@
 `py manage.py migrate`
 
 ##### Now database is ready
+
+
+### It is time to write new data into database using Django Admin
+1. First create a new superuser
+   `py manage.py createsuperuser`
+2. Enter to admin panel
+   `http://127.0.0.1:8000/admin`
+3. Enter your login and password
+
+
+### Go to admin.py file inside service
+1. Import Task model
+2. Register model
+`admin.site.register(Task)`
