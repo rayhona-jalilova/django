@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
-from myapp.tasks.apps import TasksConfig
+from tasks.apps import TasksConfig
 
 
 class NewTaskForm(forms.Form):
